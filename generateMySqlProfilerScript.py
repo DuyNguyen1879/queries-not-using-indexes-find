@@ -1,11 +1,9 @@
+#generateMySqlProfilerScript.py
 #SELECT
 #UPDATE
 #DELETE
 #INSERT
 #REPLACE
-# with open('localhost-slow.log') as f:/var/log/mysql/localhost-slow.log
-
-
 
 with open('/var/log/mysql/localhost-slow.log') as f:
     content = f.readlines()
@@ -23,7 +21,6 @@ def getTheContent(startIndex, endIndex):
         str2 = ''
         for i in range(startIndex, endIndex+1):
                 str2 = str2+' '+content[i].strip()
-        #print(str2)
         return str2
 
 for data in content:
