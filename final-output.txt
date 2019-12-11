@@ -1,0 +1,43 @@
+--------------
+NULL condition true
+EXPLAIN  INSERT INTO voucher (serialnumber, amount, expiry, state, operator_id) VALUES ('1533', NULL, '2018-06-07', 0, 1)
+--------------
+
+*************************** 1. row ***************************
+           id: 1
+  select_type: INSERT
+        table: voucher
+   partitions: NULL
+         type: ALL
+possible_keys: NULL
+          key: NULL
+      key_len: NULL
+          ref: NULL
+         rows: NULL
+     filtered: NULL
+        Extra: NULL
+1 row in set (0.00 sec)
+
+
+--------------
+NULL condition true
+EXPLAIN  INSERT INTO voucher (serialnumber, amount, expiry, state, operator_id) VALUES ('1533', NULL, '2018-06-07', 0, 1)
+--------------
+
+*************************** 1. row ***************************
+           id: 1
+  select_type: INSERT
+        table: voucher
+   partitions: NULL
+         type: ALL
+possible_keys: NULL
+          key: NULL
+      key_len: NULL
+          ref: NULL
+         rows: NULL
+     filtered: NULL
+        Extra: NULL
+1 row in set (0.00 sec)
+
+Bye
+

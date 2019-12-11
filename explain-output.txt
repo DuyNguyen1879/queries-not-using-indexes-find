@@ -1,0 +1,77 @@
+--------------
+EXPLAIN  SELECT t0.id AS id_1, t0.name AS name_2, t0.network_id AS network_id_3 FROM operator t0 WHERE t0.id = 1
+--------------
+
+*************************** 1. row ***************************
+           id: 1
+  select_type: SIMPLE
+        table: t0
+   partitions: NULL
+         type: const
+possible_keys: PRIMARY
+          key: PRIMARY
+      key_len: 4
+          ref: const
+         rows: 1
+     filtered: 100.00
+        Extra: NULL
+1 row in set, 1 warning (0.00 sec)
+
+--------------
+EXPLAIN  INSERT INTO voucher (serialnumber, amount, expiry, state, operator_id) VALUES ('1533', NULL, '2018-06-07', 0, 1)
+--------------
+
+*************************** 1. row ***************************
+           id: 1
+  select_type: INSERT
+        table: voucher
+   partitions: NULL
+         type: ALL
+possible_keys: NULL
+          key: NULL
+      key_len: NULL
+          ref: NULL
+         rows: NULL
+     filtered: NULL
+        Extra: NULL
+1 row in set (0.00 sec)
+
+--------------
+EXPLAIN  SELECT t0.id AS id_1, t0.name AS name_2, t0.network_id AS network_id_3 FROM operator t0 WHERE t0.id = 1
+--------------
+
+*************************** 1. row ***************************
+           id: 1
+  select_type: SIMPLE
+        table: t0
+   partitions: NULL
+         type: const
+possible_keys: PRIMARY
+          key: PRIMARY
+      key_len: 4
+          ref: const
+         rows: 1
+     filtered: 100.00
+        Extra: NULL
+1 row in set, 1 warning (0.00 sec)
+
+--------------
+EXPLAIN  INSERT INTO voucher (serialnumber, amount, expiry, state, operator_id) VALUES ('1533', NULL, '2018-06-07', 0, 1)
+--------------
+
+*************************** 1. row ***************************
+           id: 1
+  select_type: INSERT
+        table: voucher
+   partitions: NULL
+         type: ALL
+possible_keys: NULL
+          key: NULL
+      key_len: NULL
+          ref: NULL
+         rows: NULL
+     filtered: NULL
+        Extra: NULL
+1 row in set (0.00 sec)
+
+Bye

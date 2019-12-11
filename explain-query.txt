@@ -1,0 +1,4 @@
+ EXPLAIN  SELECT t0.id AS id_1, t0.name AS name_2, t0.network_id AS network_id_3 FROM operator t0 WHERE t0.id = 1 \G;
+ EXPLAIN  INSERT INTO voucher (serialnumber, amount, expiry, state, operator_id) VALUES ('1533', NULL, '2018-06-07', 0, 1) \G;
+ EXPLAIN  SELECT t0.id AS id_1, t0.name AS name_2, t0.network_id AS network_id_3 FROM operator t0 WHERE t0.id = 1 \G;
+ EXPLAIN  INSERT INTO voucher (serialnumber, amount, expiry, state, operator_id) VALUES ('1533', NULL, '2018-06-07', 0, 1) \G;
