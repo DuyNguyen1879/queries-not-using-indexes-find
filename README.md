@@ -37,17 +37,17 @@ These python and bash scripts are useful to find missing indexes(slow queries) i
 - run the following command from the terminal<br>
 `python3 generateMySqlProfilerScript.py`
 // it will take /var/log/mysql/localhost-slow.log as input. 
-// It will extract USE, SELECT, UPDATE, DELETE, INSERT, REPLACE statements.
-// It will prepends EXPLAIN with the query and will output explain-query.txt
+It will extract USE, SELECT, UPDATE, DELETE, INSERT, REPLACE statements.
+It will prepends EXPLAIN with the query and will output explain-query.txt.
 
-// run the following command from the terminal
-mysql -vvv -hlocalhost -uadmin -p12345678 mydatabasename < explain-query.txt >  explain-output.txt
+- run the following command from the terminal
+`mysql -vvv -hlocalhost -uadmin -p12345678 mydatabasename < explain-query.txt >  explain-output.txt`
 // it will take explain-query.txt as input sql file and will output explain-output.txt with explain statements
-// here admin is the mysql username
-// 12345678 is the mysql password
+ here admin is the mysql username.
+ 12345678 is the mysql password.
 
-// run the following command from the terminal
-python3 indexes-mismatching.py  > final-output.txt
+- run the following command from the terminal
+`python3 indexes-mismatching.py  > final-output.txt`
 // it will take explain-output.txt as input , will find 'NULL condition true' and 'Not using all keys' statements and will output final-output.txt file.
 
 
