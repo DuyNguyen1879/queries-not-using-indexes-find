@@ -12,11 +12,11 @@ These python and bash scripts are useful to find missing indexes(slow queries) i
 - append the following content to my.cnf file (Below the [mysqld] section)
 
 `slow_query_log = 1` <br>
-`slow_query_log_file = /var/log/mysql/localhost-slow.log
-long_query_time = 0
-log_queries_not_using_indexes
-general_log_file        = /var/log/mysql/mysql.log
-general_log             = 1`
+`slow_query_log_file = /var/log/mysql/localhost-slow.log` <br>
+`long_query_time = 0` <br>
+`log_queries_not_using_indexes` <br>
+`general_log_file        = /var/log/mysql/mysql.log` <br>
+`general_log             = 1` <br>
 
 // restart the mysql:
 sudo service mysql restart
