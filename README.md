@@ -2,12 +2,11 @@
 #### queries-not-using-indexes-find
 These python and bash scripts are useful to find missing indexes(slow queries) in a automated way.  
 
-- Assumed python3 already installed. 
+- Assumed python3 is already installed. 
 - Assumed Linux, Apache, MySQL is already working perfectly. 
-
-// The application may have written in any programming langauage(PHP, Python, node-js, vue-js etc.). Only pre-condition is- it's database should be mysql
-// Assumed that you have already enabled the slow-query and general-query log in the mysql. If not then enable these queries in the local machine(not on the production):
-// mysql conf file localtion: /etc/mysql/my.cnf
+- The application may have written in any programming langauage(PHP, Python, node-js, vue-js etc.). Only pre-condition is- it's database should be mysql
+- Assumed that you have already enabled the slow-query and general-query log in the mysql. If not then enable these queries in the local machine(not on the production):
+- mysql conf file localtion: /etc/mysql/my.cnf
 sudo nano /etc/mysql/my.cnf
 
 append the following content to my.cnf file (Below the [mysqld] section)
