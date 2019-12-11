@@ -18,14 +18,14 @@ These python and bash scripts are useful to find missing indexes(slow queries) i
 `general_log_file        = /var/log/mysql/mysql.log` <br>
 `general_log             = 1` <br>
 
-- restart the mysql:
+- restart the mysql:<br>
 `sudo service mysql restart`
 
-// go to required script file locations, from terminal
-cd queries-not-using-indexes-find
+- go to required script file locations, from terminal<br>
+`cd queries-not-using-indexes-find`
 
-// change permission of localhost-slow.log, mysql.log file
-sudo chmod -v 777 /var/log/mysql/localhost-slow.log /var/log/mysql/mysql.log 
+- change permission of localhost-slow.log, mysql.log file<br>
+`sudo chmod -v 777 /var/log/mysql/localhost-slow.log /var/log/mysql/mysql.log`
 
 // empty the file localhost-slow.log, mysql.log
 > /var/log/mysql/mysql.log && > /var/log/mysql/localhost-slow.log && echo "clear-all-db-logs"
