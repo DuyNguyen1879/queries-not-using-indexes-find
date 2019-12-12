@@ -1,4 +1,5 @@
 
+Blog Post link: https://pavanyogi.wordpress.com/2019/12/11/find-slow-queries-in-your-mysql-backed-web-application-script-automated-way/
 #### queries-not-using-indexes-find
 These python and bash scripts are useful to find missing indexes(slow queries) in a automated way.  
 
